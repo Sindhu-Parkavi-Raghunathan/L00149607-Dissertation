@@ -1,0 +1,18 @@
+version: "3"
+services:
+  reverseproxy:
+    build:
+      context: .
+    image: sindhuparkavi/reverseproxy 
+  backend_user:
+    build:
+      context: ../../dissertation-c3-restapi-user
+    image: sindhuparkavi/dissertation-restapi-user
+  backend_feed:
+    build:
+      context: ../../dissertation-c3-restapi-feed  
+    image: sindhuparkavi/dissertation-restapi-feed
+  frontend:
+    build:
+      context: ../../dissertation-c3-frontend  
+    image: sindhuparkavi/dissertation-frontend:local
