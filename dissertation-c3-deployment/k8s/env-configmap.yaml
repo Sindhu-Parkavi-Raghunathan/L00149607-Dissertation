@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: ConfigMap
 data:
-  AWS_BUCKET: sindhustorage
+  AWS_BUCKET: ****
   AWS_PROFILE: default
   AWS_REGION: eu-west-1
   JWT_SECRET: helloworld
-  POSTGRESS_DB: sindhuprojdb
-  POSTGRESS_HOST: sindhuprojdb.ctbz3vp255c5.eu-west-1.rds.amazonaws.com
+  POSTGRESS_DB: *****
+  POSTGRESS_HOST: ****
   URL: http://localhost:8100  
 metadata:
   name: env-config
